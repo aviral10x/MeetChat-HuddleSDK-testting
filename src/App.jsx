@@ -123,17 +123,18 @@ function App() {
   </>
   );
   const renderFinderContainer = () => {
-    /////////////   THE FINDER CONTAINER   /////////////
-    return (
-      <div>
-        <center>
-          <br />
-          <h1>{message}</h1><br /><br />
-          <button onClick={findMatch}>Find a Match</button>
-        </center>
-      </div>
-    );
-    /////////////  THE FINDER CONTAINER   /////////////
+ /////////////   THE FINDER CONTAINER   /////////////
+ return (
+  <div>
+  <center>
+  <div className="text-6xl px-32 py-32">
+  <div className="text-zinc-900">{message}</div><br />
+  <button onClick={findMatch}>Find a Match</button>
+  </div>
+  </center>
+</div>
+);
+/////////////  THE FINDER CONTAINER   /////////////
   }
 
   const renderMeetContainer = () => {
