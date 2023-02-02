@@ -202,10 +202,24 @@ function App() {
 
               <div className="">
                 <div className="">
-                  {peersKeys.map((key) => (
+                <article
+                                className="rounded-xl bg-gradient-to-r  from-green-300 via-blue-500 to-purple-600 p-2 shadow-xl transition hover:animate-background hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]"
+                            >
+                                <div className=" bg-white sm:p-6">
+                                {peersKeys.map((key) => (
                     <PeerVideoAudioElem key={`peerId-${key}`} peerIdAtIndex={key} />
 
                   ))}
+                                    <a href="#">
+                                        <h3 className="mt-4 text-center text-lg font-medium text-gray-900">
+                                            User 1
+                                        </h3>
+                                    </a>
+
+
+                                </div>
+                            </article>
+               
                 </div>
               </div>
             </div>
