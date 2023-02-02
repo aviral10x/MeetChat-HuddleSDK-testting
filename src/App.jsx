@@ -126,12 +126,12 @@ function App() {
     /////////////   THE FINDER CONTAINER   /////////////
     return (
       <div>
-      <center>
-      <br />
-      <h1>{message}</h1><br /><br />
-      <button onClick={findMatch}>Find a Match</button>
-      </center>
-    </div>
+        <center>
+          <br />
+          <h1>{message}</h1><br /><br />
+          <button onClick={findMatch}>Find a Match</button>
+        </center>
+      </div>
     );
     /////////////  THE FINDER CONTAINER   /////////////
   }
@@ -145,81 +145,81 @@ function App() {
             Room ID : {roomID}
             <div className="">
               <div className="">
-              <div className="items-center mb-10 pt-10 mt-10 md:mb-12 md:grid-cols-2">
-            <div className="items-center mt-2 md:mb-12 md:grid-cols-2">
-                <figure className="flex flex-col items-center justify-center  p-5 m-5">
+                <div className="items-center mb-10 pt-10 mt-10 md:mb-12 md:grid-cols-2">
+                  <div className="items-center mt-2 md:mb-12 md:grid-cols-2">
+                    <figure className="flex flex-col items-center justify-center  p-5 m-5">
 
-                    <div className="max-w-l ">
+                      <div className="max-w-l ">
                         <a href="#">
-                            <h5 className="mb-1 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Your Match</h5>
+                          <h5 className="mb-1 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Your Match</h5>
                         </a>
 
                         <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-1 sm:gap-16 lg:grid-cols-2">
 
-                            <article
-                                className="rounded-xl bg-gradient-to-r  from-green-300 via-blue-500 to-purple-600 p-2 shadow-xl transition hover:animate-background hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]"
-                            >
-                                <div className=" bg-white sm:p-6">
-                                <MeVideoElem />
-                                    <a href="#">
-                                        <h3 className="mt-4 text-center text-lg font-medium text-gray-900">
-                                            User 1
-                                        </h3>
-                                    </a>
+                          <article
+                            className="rounded-xl bg-gradient-to-r  from-green-300 via-blue-500 to-purple-600 p-2 shadow-xl transition hover:animate-background hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]"
+                          >
+                            <div className=" bg-white sm:p-6">
+                              <MeVideoElem />
+                              <a href="#">
+                                <h3 className="mt-4 text-center text-lg font-medium text-gray-900">
+                                  User 1
+                                </h3>
+                              </a>
 
 
-                                </div>
-                            </article>
+                            </div>
+                          </article>
+                          <article
+                    className="rounded-xl bg-gradient-to-r  from-green-300 via-blue-500 to-purple-600 p-2 shadow-xl transition hover:animate-background hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]"
+                  >
+                    <div className=" bg-white sm:p-6">
+                      {peersKeys.map((key) => (
+                        <PeerVideoAudioElem key={`peerId-${key}`} peerIdAtIndex={key} />
 
+                      ))}
+                      <a href="#">
+                        <h3 className="mt-4 text-center text-lg font-medium text-gray-900">
+                          User 1
+                        </h3>
+                      </a>
+
+
+                    </div>
+                  </article>
 
                         </div>
 
                         <div className="mt-8 text-center align-middle">
-                            <a href="#_" class="relative m-1 inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-purple-500">
-                                <span class="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-600 via-purple-600 to-violet-400"></span>
-                                <span class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-pink-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
-                                <span class="relative text-white">Join Room</span>
-                            </a>
+                          <a href="#_" class="relative m-1 inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-purple-500">
+                            <span class="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-600 via-purple-600 to-violet-400"></span>
+                            <span class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-pink-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+                            <span class="relative text-white">Join Room</span>
+                          </a>
 
-                            <a href="#_" class="relative m-1 inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-purple-500">
-                                <span class="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-600 via-purple-600 to-violet-400"></span>
-                                <span class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-pink-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
-                                <span class="relative text-white">Enable Cam</span>
-                            </a>
+                          <a href="#_" class="relative m-1 inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-purple-500">
+                            <span class="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-600 via-purple-600 to-violet-400"></span>
+                            <span class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-pink-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+                            <span class="relative text-white">Enable Cam</span>
+                          </a>
 
-                            <a href="#_" class="relative m-1 inline-flex items-center justify-center p-4 px-10 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-purple-500">
-                                <span class="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-600 via-purple-600 to-violet-400"></span>
-                                <span class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-pink-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
-                                <span class="relative text-white">Skip</span>
-                            </a>
+                          <a href="#_" class="relative m-1 inline-flex items-center justify-center p-4 px-10 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-purple-500">
+                            <span class="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-600 via-purple-600 to-violet-400"></span>
+                            <span class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-pink-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+                            <span class="relative text-white">Skip</span>
+                          </a>
                         </div>
-                    </div>
-                </figure>
-            </div>
-        </div>
-                
+                      </div>
+                    </figure>
+                  </div>
+                </div>
+
               </div>
 
               <div className="">
                 <div className="">
-                <article
-                                className="rounded-xl bg-gradient-to-r  from-green-300 via-blue-500 to-purple-600 p-2 shadow-xl transition hover:animate-background hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]"
-                            >
-                                <div className=" bg-white sm:p-6">
-                                {peersKeys.map((key) => (
-                    <PeerVideoAudioElem key={`peerId-${key}`} peerIdAtIndex={key} />
+             
 
-                  ))}
-                                    <a href="#">
-                                        <h3 className="mt-4 text-center text-lg font-medium text-gray-900">
-                                            User 1
-                                        </h3>
-                                    </a>
-
-
-                                </div>
-                            </article>
-               
                 </div>
               </div>
             </div>
@@ -232,8 +232,8 @@ function App() {
                 Disable Webcam
               </button>
               <button onClick={() => huddleClient.allowAllLobbyPeersToJoinRoom()}>
-              allowAllLobbyPeersToJoinRoom()
-            </button>
+                allowAllLobbyPeersToJoinRoom()
+              </button>
               <button onClick={() => handleSkip()}>
                 Skip
               </button>
@@ -269,7 +269,7 @@ function App() {
     checkIfWalletIsConnected();
   }, []);
 
-  useEffect(() =>{
+  useEffect(() => {
     console.log(roomID, '- Room ID Has changed')
   }, [roomID])
 
@@ -277,7 +277,7 @@ function App() {
 
     const q = query(collection(myDatabase, "Users"), where("status", "==", false), limit(1));
     const querySnapshot = await getDocs(q);
-     console.log(querySnapshot.size)
+    console.log(querySnapshot.size)
     if (querySnapshot.size > 0) {
       querySnapshot.forEach((doc) => {
         if (doc.id != currentAccount) {
@@ -286,24 +286,24 @@ function App() {
           console.log("Found Room Match")
           console.log("Set Status to true")
         }
-        else{
+        else {
           createRoom();
         }
 
       });
 
-      if(roomID != currentAccount){
+      if (roomID != currentAccount) {
         await updateDoc(doc(myDatabase, "Users", roomID), {
           status: true
         });
-  
+
         setStatus(true)
         // huddleClient.enableWebcam()
         handleJoin()
         huddleClient.allowAllLobbyPeersToJoinRoom()
         console.log("joined --->" + roomID)
       }
-      
+
     }
     else {
       console.log("Not Found")
